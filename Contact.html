@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-+TwXY6K4fCkxBK4K7xNIMarq5P8Pt0iikc4SVYga25DRUq7BxlVUekB1Z56INhXNTb54jnoQiDxPz25TC/4Gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        .contact{
+            position: relative;
+            min-height: 40vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(0,0,39);
+            background-size: cover;
+        }
+        .contact .content{
+            font-weight: 800px;
+            text-align: center;
+        }
+        .contact .content h2{
+            font-size: 36px;
+            font-weight: 50px;
+            color: #fff;
+        }
+        .contact .content p{
+            font-size: 36px;
+            padding-bottom: 150px;
+            font-weight: 500;
+            color: #fff;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .container .contactInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container .contactInfo .box{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .container .contactInfo .box .icon
+        {
+            min-width: 60px;
+            height: 60px;
+            background:#d7dae1;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+        .container .contactInfo .box .text
+        {
+            display: flex;
+            margin-left: 20px;
+            font-size: 20px;
+            color: #ffffff;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .container .contactInfo .box .text h3{
+            font-weight: 500;
+            color: #00bcd4;
+        }
+        .contactForm
+        {
+            width: 40%;
+            padding: 40px;
+            border-radius: 10px;
+            background: rgb(18,18,65);
+        }
+        .contactForm h2
+        {
+            font-size: 30px;
+            color: #9a9696;
+            font-weight: 500;
+        }
+        .contactForm .inputBox 
+        {
+            position: relative;
+            width: 100%; 
+            margin-top: 10px;
+        }
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea
+        {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactForm .inputBox span
+        {
+            position: absolute;
+            left: 22px;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+        .contactForm .inputBox input:focus ~span,
+        .contactForm .inputBox input:valid ~span,
+        .contactForm .inputBox textarea:focus ~span,
+        .contactForm .inputBox textarea:valid ~span
+        {
+            color: #c08b9d;
+            font-size: 12px;
+            transform: translate(-20px);
+        }
+        .contactForm .inputBox input[type="submit"]
+        {
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            cursor: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /* Add CSS for the social media icons container */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Add CSS for each social media icon */
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #00bcd4; /* Change color on hover */
+        }
+
+        @media(max-width:1000px)
+        {
+            .contact
+            {
+                padding: 50px;
+            }
+            .container
+            {
+                flex-direction: column;
+            }
+            .container .contactInfo
+            {
+                margin-bottom: 40px;
+            }
+            .container .contactInfo
+            {
+                width: 100%;
+            }
+            /* Adjust media queries to accommodate the social icons */
+            .social-icons {
+                margin-top: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p></p>
+
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>At.Post.Sawali(Wagh), Ta.Hinganghat, Dist.Wardha 442301.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>7499558496</p> 
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>prathmeshpim2002@gmail.com</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" required="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Add the social media icons -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/your_facebook_username" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/pimpalkar.prathamesh" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/prathamesh-pimpalkar-5a9545204/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/your_github_username" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</body>
+</html>
